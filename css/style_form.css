@@ -1,0 +1,80 @@
+@media only screen and (max-device-width: 900px) {
+    /* .menu { width:100%; } */
+}
+    body{
+        background: linear-gradient(to right, rgb(54,54,54), rgb(28,28,28));
+    }
+
+    legend{
+        color: white;
+        text-align: center;
+    }
+
+    label{
+        color: white;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    input{
+        border-color: black;
+        background-color: #C0C0C0;
+        position:  relative;
+        font-size: 20px;
+        
+    }
+
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    fieldset{
+        border: 5px solid white;
+    }
+
+    h1{
+        color: white;
+        font-size: 35px;
+        text-align: center;
+        height: 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .button{
+        display: inline-block;
+        margin: 100px;
+        padding: 0.5em 1em;
+        text-decoration: none;
+        background: white;
+        color: black;
+        border: solid;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .button:visited{
+        color: black;
+    }
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
