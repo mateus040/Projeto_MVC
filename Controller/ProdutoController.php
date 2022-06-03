@@ -1,8 +1,8 @@
 <?php
 
-namespace ProjetoPHP\Controller;
+namespace Projeto_MVC\Controller;
 
-use ProjetoPHP\Model\ProdutoModel;
+use Projeto_MVC\Model\ProdutoModel;
 
 class ProdutoController
 {

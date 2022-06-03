@@ -1,8 +1,8 @@
 <?php
 
-namespace ProjetoPHP\Model;
+namespace Projeto_MVC\Model;
 
-use ProjetoPHP\DAO\PessoaDAO;
+use Projeto_MVC\DAO\PessoaDAO;
 
 class PessoaModel
 {

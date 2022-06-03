@@ -1,8 +1,8 @@
 <?php
 
-namespace ProjetoPHP\Model;
+namespace Projeto_MVC\Model;
 
-use ProjetoPHP\DAO\ProdutoDAO;
+use Projeto_MVC\DAO\ProdutoDAO;
 
 class ProdutoModel
 {

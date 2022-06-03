@@ -1,9 +1,9 @@
 <?php
 
-use ProjetoPHP\Controller\PessoaController;
-use ProjetoPHP\Controller\ProdutoController;
-use ProjetoPHP\Controller\categoria_produtoController;
-use ProjetoPHP\Controller\FuncionarioController;
+use Projeto_MVC\Controller\PessoaController;
+use Projeto_MVC\Controller\ProdutoController;
+use Projeto_MVC\Controller\categoria_produtoController;
+use Projeto_MVC\Controller\FuncionarioController;
 
 $uri_parse = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 

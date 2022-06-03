@@ -1,8 +1,8 @@
 <?php
 
-namespace ProjetoPHP\Controller;
+namespace Projeto_MVC\Controller;
 
-use ProjetoPHP\Model\categoria_produtoModel;
+use Projeto_MVC\Model\categoria_produtoModel;
 
 class categoria_produtoController
 {

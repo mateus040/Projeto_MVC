@@ -1,8 +1,8 @@
 <?php
 
-namespace ProjetoPHP\Model;
+namespace Projeto_MVC\Model;
 
-use ProjetoPHP\DAO\FuncionarioDAO;
+use Projeto_MVC\DAO\FuncionarioDAO;
 
 class FuncionarioModel
 {

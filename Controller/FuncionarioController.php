@@ -1,8 +1,8 @@
 <?php
 
-namespace ProjetoPHP\Controller;
+namespace Projeto_MVC\Controller;
 
-use ProjetoPHP\Model\FuncionarioModel;
+use Projeto_MVC\Model\FuncionarioModel;
 
 class FuncionarioController
 {

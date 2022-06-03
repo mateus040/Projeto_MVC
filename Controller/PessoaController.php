@@ -1,8 +1,8 @@
 <?php
 
-namespace ProjetoPHP\Controller;
+namespace Projeto_MVC\Controller;
 
-use ProjetoPHP\Model\PessoaModel;
+use Projeto_MVC\Model\PessoaModel;
 
 /**
  * Classes Controller são responsáveis por processar as requisições do usuário.
