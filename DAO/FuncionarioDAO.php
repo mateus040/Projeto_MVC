@@ -59,7 +59,7 @@ class FuncionarioDAO
         $stmt->bindValue(1, $id);
         $stmt->execute();
 
-        return $stmt->fetchObject("ProjetoPHP\Model\FuncionarioModel");
+        return $stmt->fetchObject("Projeto_MVC\Model\FuncionarioModel");
     }
 
     public function delete(int $id)

@@ -69,7 +69,7 @@ class ProdutoDAO
         $stmt->bindValue(1, $id);
         $stmt->execute();
 
-        return $stmt->fetchObject("ProjetoPHP\Model\ProdutoModel");
+        return $stmt->fetchObject("Projeto_MVC\Model\ProdutoModel");
     }
 
     public function delete(int $id)

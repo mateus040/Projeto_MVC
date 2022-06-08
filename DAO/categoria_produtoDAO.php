@@ -91,7 +91,7 @@ class categoria_produtoDAO
         $stmt->bindValue(1, $id);
         $stmt->execute();
 
-        return $stmt->fetchObject("ProjetoPHP\Model\categoria_produtoModel");
+        return $stmt->fetchObject("Projeto_MVC\Model\categoria_produtoModel");
     }
 
     public function delete(int $id)

@@ -109,7 +109,7 @@ class PessoaDAO
         $stmt->bindValue(1, $id);
         $stmt->execute();
 
-        return $stmt->fetchObject("ProjetoPHP\Model\PessoaModel");
+        return $stmt->fetchObject("Projeto_MVC\Model\PessoaModel");
     }
 
     public function delete(int $id)

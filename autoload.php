@@ -3,7 +3,7 @@
 spl_autoload_register(function ($nome_da_classe) {
 
     // echo "Tentou dar include de: " . $nome_da_classe . "<br />";
-    //    Tentou dar include de: ProjetoPHP\Controller\PessoaController 
+    // echo   Tentou dar include de: ProjetoPHP\Controller\PessoaController 
     // F:\ETEC\2º Ano\Programação WEB II\PHP\ProjetoPHP/ProjetoPHP\Controller\PessoaController
 
     // echo dirname(__FILE__);
