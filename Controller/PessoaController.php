@@ -2,6 +2,10 @@
 
 namespace Projeto_MVC\Controller;
 
+/**
+ * Definimos aqui que nossa classe precisa incluir uma classe de outro subnamespace
+ * do projeto, no caso a classe PessoaModel do subnamespace Model
+ */
 use Projeto_MVC\Model\PessoaModel;
 
 /**
@@ -33,8 +37,8 @@ class PessoaController
     {
         $model = new PessoaModel();
 
-        if(isset($_GET['id']))
-            $model = $model->getById( (int) $_GET['id']);
+        if(isset($_GET['id'])) // Verificando se existe uma variável $_GET
+            $model = $model->getById( (int) $_GET['id']); // Typecast e obtendo o model preenchido vindo da DAO.
 
 
         include 'View/modules/Pessoa/FormPessoa.php';
@@ -68,9 +72,9 @@ class PessoaController
     {
         $model = new PessoaModel();
 
-        $model->delete( (int) $_GET['id'] );
+        $model->delete( (int) $_GET['id'] ); // Enviando a variável $_GET como inteiro para o método delete
 
-        header("Location: /pessoa");
+        header("Location: /pessoa"); // redirecionando o usuário para outra rota.
     }
 
 }

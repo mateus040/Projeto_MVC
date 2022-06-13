@@ -73,6 +73,10 @@ class PessoaDAO
         $stmt->execute();      
     }
 
+    /**
+     * Método que recebe o Model preenchido e atualiza no banco de dados.
+     * Note que neste model é necessário ter a propriedade id preenchida.
+     */
     public function update(PessoaModel $model)
     {
         $sql = "UPDATE pessoa SET nome=?, rg=?, cpf=?, data_nascimento=?, email=?, telefone=?, endereco=? WHERE id=?";
@@ -89,7 +93,9 @@ class PessoaDAO
         $stmt->execute();
     }
 
-
+    /**
+     * Método que retorna todas os registros da tabela pessoa no banco de dados.
+     */
     public function select()
     {
         $sql = "SELECT * FROM pessoa";
@@ -98,9 +104,16 @@ class PessoaDAO
 
         $stmt->execute();
 
+        // Retorna um array com as linhas retornadas da consulta. Observe que
+        // o array é um array de objetos. Os objetos são do tipo stdClass e 
+        // foram criados automaticamente pelo método fetchAll do PDO.
         return $stmt->fetchAll(PDO::FETCH_CLASS);
     }
 
+    /**
+     * Retorna um registro específico da tabela pessoa do banco de dados.
+     * Note que o método exige um parâmetro $id do tipo inteiro.
+     */
     public function selectById(int $id)
     {
         $sql = "SELECT * FROM pessoa WHERE id = ?";
@@ -112,6 +125,10 @@ class PessoaDAO
         return $stmt->fetchObject("Projeto_MVC\Model\PessoaModel");
     }
 
+    /**
+     * Remove um registro da tabela pessoa do banco de dados.
+     * Note que o método exige um parâmetro $id do tipo inteiro.
+     */
     public function delete(int $id)
     {
         $sql = "DELETE FROM pessoa WHERE id = ? ";
