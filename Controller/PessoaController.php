@@ -68,6 +68,9 @@ class PessoaController
         
     }
 
+    /*
+     * Método para tratar a rota delete. 
+     */
     public static function delete()
     {
         $model = new PessoaModel();

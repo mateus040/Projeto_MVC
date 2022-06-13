@@ -94,7 +94,7 @@ class PessoaDAO
     }
 
     /**
-     * Método que retorna todas os registros da tabela pessoa no banco de dados.
+     * Método que retorna todos os registros da tabela pessoa no banco de dados.
      */
     public function select()
     {
