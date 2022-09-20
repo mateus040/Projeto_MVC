@@ -5,17 +5,12 @@ namespace Projeto_MVC\DAO;
 use Projeto_MVC\Model\ProdutoModel;
 use \PDO;
 
-class ProdutoDAO
+class ProdutoDAO extends DAO
 {
-    public $conexao;
 
     public function __construct()
     {   
-        $dsn = "mysql:host=localhost:3307;dbname=db_cadastro";
-        $user = "root";
-        $pass = "etecjau";
-
-        $this->conexao = new PDO($dsn, $user, $pass);
+        parent::__construct();
     }
 
     public function insert(ProdutoModel $model)

@@ -4,11 +4,9 @@ namespace Projeto_MVC\Model;
 
 use Projeto_MVC\DAO\FuncionarioDAO;
 
-class FuncionarioModel
+class FuncionarioModel extends Model
 {
     public $id, $nome, $cargo;
-
-    public $rows;
 
 
     public function save()

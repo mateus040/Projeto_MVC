@@ -5,17 +5,8 @@ namespace Projeto_MVC\DAO;
 use Projeto_MVC\Model\categoria_produtoModel;
 use \PDO;
 
-class categoria_produtoDAO
+class categoria_produtoDAO extends DAO
 {
-
-    /**
-     * Atributo (ou Propriedade) da classe destinado a armazenar o link (vínculo aberto)
-     * de conexão com o banco de dados.
-     */
-
-
-    private $conexao;
-
 
     /**
      * Método construtor, sempre chamado na classe quando a classe é instanciada.
@@ -29,13 +20,7 @@ class categoria_produtoDAO
 
     function __construct()
     {
-        $dsn = "mysql:host=localhost:3307;dbname=db_cadastro";
-        $user = "root";
-        $pass = "etecjau";  
-
-
-        // Criando a conexão e armazenado na propriedade definida para tal.
-        $this->conexao = new PDO($dsn, $user, $pass);
+        parent::__construct();
     }
 
 

@@ -4,7 +4,7 @@ namespace Projeto_MVC\Controller;
 
 use Projeto_MVC\Model\FuncionarioModel;
 
-class FuncionarioController
+class FuncionarioController extends Controller
 {
     public static function index()
     {

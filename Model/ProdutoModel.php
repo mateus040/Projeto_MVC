@@ -4,13 +4,9 @@ namespace Projeto_MVC\Model;
 
 use Projeto_MVC\DAO\ProdutoDAO;
 
-class ProdutoModel
+class ProdutoModel extends Model
 {
     public $id, $nome, $preco, $descricao;
-
-    public $rows;
-
-
 
     public function save()
     {

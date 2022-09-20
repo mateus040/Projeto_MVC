@@ -5,17 +5,12 @@ namespace Projeto_MVC\DAO;
 use Projeto_MVC\Model\FuncionarioModel;
 use \PDO;
 
-class FuncionarioDAO
+class FuncionarioDAO extends DAO
 {
-    private $conexao;
 
     function __construct()
     {
-        $dsn = "mysql:host=localhost:3307;dbname=db_cadastro";
-        $user = "root";
-        $pass = "etecjau";
-
-        $this->conexao = new PDO($dsn, $user, $pass);
+        parent::__construct();
     }
 
     function insert(FuncionarioModel $model)

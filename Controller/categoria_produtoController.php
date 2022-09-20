@@ -4,7 +4,7 @@ namespace Projeto_MVC\Controller;
 
 use Projeto_MVC\Model\categoria_produtoModel;
 
-class categoria_produtoController
+class categoria_produtoController extends Controller
 {
 
     /**

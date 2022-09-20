@@ -4,7 +4,7 @@ namespace Projeto_MVC\Controller;
 
 use Projeto_MVC\Model\ProdutoModel;
 
-class ProdutoController
+class ProdutoController extends Controller
 {
 
     public static function index()

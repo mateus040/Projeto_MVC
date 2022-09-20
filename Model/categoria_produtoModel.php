@@ -4,15 +4,13 @@ namespace Projeto_MVC\Model;
 
 use Projeto_MVC\DAO\categoria_produtoDAO;
 
-class categoria_produtoModel
+class categoria_produtoModel extends Model
 {
 
     /**
      * Declaração das propriedades conforme campos da tabela no banco de dados.
      */
     public $id, $descricao;
-
-    public $rows;
 
 
     /**

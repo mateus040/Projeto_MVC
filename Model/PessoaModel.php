@@ -10,7 +10,7 @@ use Projeto_MVC\DAO\PessoaDAO;
  * Também é atribuído a Model a validação dos dados da View e controle de acesso aos métodos
  * da DAO.
  */
-class PessoaModel
+class PessoaModel extends Model
 {
     /**
      * Declaração das propriedades conforme campos da tabela no banco de dados.
@@ -18,8 +18,6 @@ class PessoaModel
     public $id, $nome, $rg, $cpf;
     public $data_nascimento, $email;
     public $telefone, $endereco;
-
-    public $rows;
 
 
     /**
