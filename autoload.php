@@ -8,8 +8,21 @@ spl_autoload_register(function ($nome_da_classe) {
 
     // echo dirname(__FILE__);
 
-    include '../' . $nome_da_classe . '.php';
+
+
+    /*include '../' . $nome_da_classe . '.php';*/
+
+    $arquivo = BASEDIR. '/' . $nome_da_classe . '.php';
+
+    if(file_exists($arquivo))
+    {
+        include $arquivo;
+    }
+    else
+        exit('Arquivo não encontrado. Arquivo: ' .$arquivo . "<br />");
     
+
+
 
     /*$classe_controller = 'Controller/' . $nome_da_clase . ".php";
     $classe_model = 'Model/' . $nome_da_clase . ".php";
