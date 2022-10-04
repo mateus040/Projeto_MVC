@@ -26,7 +26,8 @@ switch($uri_parse)
 
     #ROTA PAGINA INICIAL
     case '/home':
-        include 'View/modules/PaginaInicial/PaginaInicial.php';
+        header("Location: /login");
+        /*include 'View/modules/PaginaInicial/PaginaInicial.php';*/
     break;
 
     # ROTAS PESSOA
