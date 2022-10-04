@@ -4,11 +4,26 @@ use Projeto_MVC\Controller\PessoaController;
 use Projeto_MVC\Controller\ProdutoController;
 use Projeto_MVC\Controller\categoria_produtoController;
 use Projeto_MVC\Controller\FuncionarioController;
+use Projeto_MVC\Controller\LoginController;
 
 $uri_parse = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 switch($uri_parse)
 {
+    #ROTA LOGIN
+    case '/login':
+        LoginController::index();
+    break;
+
+    case 'login/auth':
+        LoginController::auth();
+    break;
+
+    case '/logout':
+        LoginController::logout();
+    break;
+
+
     #ROTA PAGINA INICIAL
     case '/home':
         include 'View/modules/PaginaInicial/PaginaInicial.php';
