@@ -15,7 +15,7 @@ switch($uri_parse)
         LoginController::index();
     break;
 
-    case 'login/auth':
+    case '/login/auth':
         LoginController::auth();
     break;
 
