@@ -11,7 +11,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema db_mvc
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `db_mvc` DEFAULT CHARACTER SET utf8 ;
+CREATE SCHEMA IF NOT EXISTS `db_cadastro` DEFAULT CHARACTER SET utf8 ;
 -- -----------------------------------------------------
 -- Schema db_cadastro
 -- -----------------------------------------------------
@@ -20,12 +20,12 @@ CREATE SCHEMA IF NOT EXISTS `db_mvc` DEFAULT CHARACTER SET utf8 ;
 -- Schema db_cadastro
 -- -----------------------------------------------------
 CREATE SCHEMA IF NOT EXISTS `db_cadastro` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
-USE `db_mvc` ;
+USE `db_cadastro` ;
 
 -- -----------------------------------------------------
 -- Table `db_mvc`.`pessoa`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `db_mvc`.`pessoa` (
+CREATE TABLE IF NOT EXISTS `db_cadastro`.`pessoa` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL,
   `cpf` CHAR(11) NOT NULL,
@@ -37,7 +37,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `db_mvc`.`usuario`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `db_mvc`.`usuario` (
+CREATE TABLE IF NOT EXISTS `db_cadastro`.`usuario` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL,
   `email` VARCHAR(100) NOT NULL,
@@ -109,7 +109,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- Table `db_cadastro`.`usuario`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `db_cadastro`.`usuario` (
-  `id` INT NOT NULL,
+  `id` INT auto_increment NOT NULL,
   `nome` VARCHAR(45) NOT NULL,
   `email` VARCHAR(100) NOT NULL,
   `senha` VARCHAR(100) NOT NULL,
