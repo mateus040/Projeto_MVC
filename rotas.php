@@ -5,6 +5,7 @@ use Projeto_MVC\Controller\ProdutoController;
 use Projeto_MVC\Controller\categoria_produtoController;
 use Projeto_MVC\Controller\FuncionarioController;
 use Projeto_MVC\Controller\LoginController;
+use Projeto_MVC\Controller\UsuarioController;
 
 $uri_parse = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
@@ -21,6 +22,24 @@ switch($uri_parse)
 
     case '/logout':
         LoginController::logout();
+    break;
+
+
+        # ROTAS USUARIO
+    case '/usuario':
+        UsuarioController::index();
+    break;
+    
+    case '/usuario/form':
+        UsuarioController::form();
+    break;
+    
+    case '/usuario/save':
+        UsuarioController::save();
+    break;
+    
+    case '/usuario/delete':
+        UsuarioController::delete();
     break;
 
 
@@ -102,10 +121,9 @@ switch($uri_parse)
     case '/funcionario/delete':
         FuncionarioController::delete();
     break;
-
  
 
     default:
-        header("Location: /login");
+        echo "/login";
     break;
 }
