@@ -125,3 +125,5 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 -- INSERT --
 insert into usuario (nome, email, senha) values ("mateus", "mateusgabrielmoreno264@gmail.com", sha1("mateus555"));
+
+select * from usuario;
