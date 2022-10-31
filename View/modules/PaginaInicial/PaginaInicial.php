@@ -35,6 +35,8 @@
         
         <button><a href="/funcionario" class="button"> <b> Listagem Funcionários </b> </a> </button>
 
+        <button><a href="/logout" class="button"> <b> Sair </b> </a> </button>
+
         <br> <br> <br>
 
     </div>

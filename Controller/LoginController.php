@@ -24,6 +24,7 @@ class LoginController extends Controller
         if ($usuario_logado !== null) {
 
             $_SESSION['usuario_logado'] = $usuario_logado;
+            session_start();
 
             header("Location: /home");
 
